@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>My Proggramming Adventure</title>
+<style>
+</style>
+</head>
+<body>
+
+<!--javascrip loader için çağrı ve loader-->
+<body onload="myFunction()" style="margin:0;">
+<div id="loader">
+<img src="images/Loader.gif" alt="Loading...">
+</div>
+
+<!--loader sonrası animasyon-->
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+<!--navbar-->
+<ul class="navbar">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="myprojects.html">My Projects</a></li>
+  <li><a href="Inspiration.html">My Inspiration</a></li>
+  <li><a class="active" href="Blog.html">Blog</a></li>
+  <li><a href="Whoami.html">Who am I</a></li>
+  <li style="float:right"><a href="Contact.html">Contact me</a></li>
+</ul>
+
+
+<!--sayfanın gerisi-->
+<table>
+  <colgroup>
+    <col style="width: 20%">
+    <col style="width: 60%">
+    <col style="width: 20%">
+  </colgroup>
+<tr>
+<td>
+
+<!--sol-->
+
+</td>
+<td>
+
+<table style="width: 100%;;">
+<h1 style="color:#04AA6D; text-align: center">My Projects</h1>
+	<tbody>
+		<tr>
+			<td align="left" valign="top"><h3 style="color:#04AA6D;">My Adventure Beggins</h3>
+			<p>
+			Hello friends,
+
+In this blog, I want to share with you how I started coding and what I experienced in this process. Coding means learning how to program a computer and how to solve various problems. This is both an interesting and a challenging process.<br><br>
+
+To start coding, I learned a programming language called Python. With Python, I can do many different things. This makes me very happy.<br><br>
+
+While learning coding, I also faced many difficulties. I struggled to understand some topics, I dealt with some errors, I got stuck on some projects. But these did not discourage me, on the contrary, they made me more determined.<br><br>
+
+Since I started coding, a lot has changed in my life. Coding gave me a new perspective, a new passion, a new skill, a new goal. Coding became a way of life for me.<br><br>
+
+I wish success to those who want to start coding, those who have started and those who continue. Keep following this blog, because I will share more things about coding. See you later!
+			</p><h4>27.12.2023 08:59</h4>
+
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td>
+<td>
+
+<!--sağ-->
+
+</td></tr>
+</table>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+</html>

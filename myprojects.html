@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>My Proggramming Adventure</title>
+<style>
+</style>
+</head>
+<body>
+
+<!--javascrip loader için çağrı ve loader-->
+<body onload="myFunction()" style="margin:0;">
+<div id="loader">
+<img src="images/Loader.gif" alt="Loading...">
+</div>
+
+<!--loader sonrası animasyon-->
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+<!--navbar-->
+<ul class="navbar">
+  <li><a href="index.html">Home</a></li>
+  <li><a class="active" href="myprojects.html">My Projects</a></li>
+  <li><a href="Inspiration.html">My Inspiration</a></li>
+  <li><a href="Blog.html">Blog</a></li>
+  <li><a href="Whoami.html">Who am I</a></li>
+  <li style="float:right"><a href="Contact.html">Contact me</a></li>
+</ul>
+
+
+<!--sayfanın gerisi-->
+<table>
+  <colgroup>
+    <col style="width: 20%">
+    <col style="width: 60%">
+    <col style="width: 20%">
+  </colgroup>
+<tr>
+<td>
+
+<!--sol-->
+
+</td>
+<td>
+
+<table style="width: 100%;;">
+<h1 style="color:#04AA6D; text-align: center">My Projects</h1>
+	<tbody>
+		<tr>
+			<td align="left" valign="top"><h3 style="color:#04AA6D;">To Do List App</h3>
+			<p><img src="images\1.png" alt="To-Do list app" style="float:right;width:40%;margin-left:5px;">
+			Making a todo list app with Python can be both challenging and fun. Python is a versatile and easy-to-learn programming language, so you can develop a todo list app with many different tools and libraries.<br><br>
+
+Making a todo list app is a great opportunity to improve your programming skills. A todo list app is a simple but functional application, so it is ideal to apply and reinforce the basic programming concepts. Also, you can customize and enhance your todo list app according to your personal needs and creativity. For example, you can add extra features such as colorful themes, reminders, categories, filters to your todo list app. This way, your todo list app becomes both fun and useful.
+			</p>
+
+		</td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><h3 style="color:#04AA6D;">Database Management System</h3>
+			<p><img src="images\2.jpeg" alt="To-Do list app" style="float:left;width:40%;margin-right:15px;margin-right:5px;">
+Making a Database Management System (DBMS) can be both challenging and fun. A DBMS is a software system that is used to store, edit and manage data.<br><br>
+
+Making a DBMS requires knowledge and skills in topics such as data structures, algorithms, programming languages, database design, etc. Also, factors such as data integrity, security, performance, scalability, etc. need to be considered. Therefore, making a DBMS is a difficult engineering problem.
+			</p>
+
+		</td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><h3 style="color:#04AA6D;">Calculator</h3>
+			<p><img src="images\3.jpg" alt="To-Do list app" style="float:right;width:40%;margin-left:5px;">
+			Making a calculator with C language can be both challenging and fun. C language is a low-level and powerful programming language, so you need to know well the basic algorithms, operators, data types, conditional structures, loops, functions, etc. to make a calculator. Also, you need to design and implement the factors such as the interface, functionality, error control, etc. of the calculator.<br><br>
+
+Making a calculator with C language is also a fun creative process. A calculator is a simple but useful application, so it is ideal to improve and reinforce the programming logic. Also, you can customize and enhance your calculator by adding different features, operations, modes, etc. For example, you can add operations such as trigonometric, logarithmic, exponential, radical, etc., number systems such as decimal, binary, octal, hexadecimal, etc., modes such as scientific, engineering, programming, etc. to your calculator. This way, making a calculator can be both challenging and fun.
+			</p>
+		</td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><h3 style="color:#04AA6D;">ATM App</h3>
+			<p><img src="images\2.png" alt="To-Do list app" style="float:left;width:40%;margin-right:15px;margin-right:5px;">
+			Making an ATM application with C can be both challenging and fun. C is a low-level and powerful programming language, so you need to know well the basic algorithms, operators, data types, conditional structures, loops, functions, etc. to make an ATM application. Also, you need to design and implement the factors such as the interface, functionality, error control, etc. of the ATM application.<br><br>
+
+Making an ATM application with C is also a fun creative process. An ATM application is a simple but useful application, so it is ideal to improve and reinforce the programming logic. Also, you can customize and enhance your ATM application by adding different features, operations, modes, etc. For example, you can add operations such as withdrawing money, depositing money, transferring money, paying bills, changing password, etc., modes such as cardless transaction, credit card debt payment, TL loading, etc. to your ATM application. This way, making an ATM application can be both challenging and fun.
+			</p>
+		</td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><h3 style="color:#04AA6D;">This Website</h3>
+			<p><img src="images\3.png" alt="To-Do list app" style="float:right;width:40%;margin-left:5px;">
+			Making a website can be both challenging and fun. To make a website, you need to know web technologies such as HTML, CSS, JavaScript, and topics such as web design, web development, web security. Also, you need to implement the interface, functionality, and error control of the website.
+
+Making a website is also a fun creative process. A website can be created for different purposes, target audiences, and sectors. You can customize and improve your website by adding different features, operations, and modes. In this way, making a website can be both challenging and fun.
+			</p>
+		</td>
+		</tr>
+	</tbody>
+</table>
+</td>
+<td>
+
+<!--sağ-->
+
+</td></tr>
+</table>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+</html>

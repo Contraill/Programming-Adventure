@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>My Proggramming Adventure</title>
+<style>
+body {
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<!--javascrip loader için çağrı ve loader-->
+<body onload="myFunction()" style="margin:0;">
+<div id="loader">
+<img src="images/Loader.gif" alt="Loading...">
+</div>
+
+<!--loader sonrası animasyon-->
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+<!--navbar-->
+<ul class="navbar">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="myprojects.html">My Projects</a></li>
+  <li><a href="Inspiration.html">My Inspiration</a></li>
+  <li><a href="Blog.html">Blog</a></li>
+  <li><a href="Whoami.html">Who am I</a></li>
+  <li style="float:right"><a href="Contact.html">Contact me</a></li>
+</ul>
+
+
+<!--sayfanın gerisi-->
+<table>
+  <colgroup>
+    <col style="width: 20%">
+    <col style="width: 60%">
+    <col style="width: 20%">
+  </colgroup>
+<tr>
+<td>
+
+<!--sol-->
+
+</td>
+<td>
+<!--içerik aralığı başı-->
+<br><h1>My Proggramming Adventure</h1>
+
+<table>
+<colgroup>
+<col style="width: 60%">
+<col style="width: 40%">
+</colgroup>
+<tr><td>
+Hello, I'm Can. In this blog, I share the projects and experiences I have while learning coding. Coding is both a fun and useful skill. Keep coding! 
+</td><td><br><br><p style="margin-left: 4px;"><img src="images\1.jpg" alt="Compiler" width="350"></p>
+</td></tr>
+</table>
+
+I will talk about the parts of this blog in a list below:
+
+<ol type='I'>
+<li>
+	<p style="color:white;">My Projects</p>
+</li>
+	<li>
+	<p style="color:white;">My Inspirations</p><ul type='square'>
+		<li>
+		<p style="color:white;">Like videos from youtube for education purposes</p>
+		</li>
+		</ul>
+	</li>
+	<li>
+	<p style="color:white;">Blog</p><ul type='square'>
+		<li>
+		<p style="color:white;">a blog that I mentioned my the difficulties I experienced</p>
+		</li>
+		</ul>
+	</li>
+	<li>
+	<p style="color:white;">Who am I</p>
+	</li>
+	<li>
+	Contact me<ul type='square'>
+		<li>
+		<p style="color:white;">For if you have questions</p>
+	</li>
+	</ul>
+</li>
+</ol>
+<!--içerik aralığı sonu-->
+</td>
+
+<!--sağ-->
+
+<td>
+
+</td></tr>
+</table>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+</html>
