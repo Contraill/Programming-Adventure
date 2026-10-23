@@ -1,118 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="images/logo.png">
-  <link rel="stylesheet" href="css/style.css">
-  <title>My Proggramming Adventure</title>
-<style>
-body {
-  overflow: hidden;
-}
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Programming Adventure</title>
+  <meta name="description" content="İzzet Can Öztozlu: from a Notepad blog written for ITEC229 in 2023 to the projects I build today.">
+  <link rel="icon" href="2023/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="module" src="assets/app.js"></script>
 </head>
 <body>
 
-<!--javascrip loader için çağrı ve loader-->
-<body onload="myFunction()" style="margin:0;">
-<div id="loader">
-<img src="images/Loader.gif" alt="Loading...">
-</div>
+<header class="hero old">
+  <nav class="oldnav" aria-label="Original 2023 site">
+    <a href="2023/index.html" class="active">Home</a>
+    <a href="2023/myprojects.html">My Projects</a>
+    <a href="2023/Inspiration.html">My Inspiration</a>
+    <a href="2023/Blog.html">Blog</a>
+    <a href="2023/Whoami.html">Who am I</a>
+    <a href="#contact" class="right">Contact me</a>
+  </nav>
+  <div class="hero-body">
+    <h1>My Prog<del aria-hidden="true">g</del>ramming Adventure</h1>
+    <p>Hello, I'm İzzet. This line opened my first website, which I wrote in Windows Notepad for ITEC229 in December 2023. Typo included.</p>
+    <p class="hint">Scroll down to see what came after.</p>
+  </div>
+</header>
 
-<!--loader sonrası animasyon-->
-<div style="display:none;" id="myDiv" class="animate-bottom">
+<main>
+  <section class="era old" aria-labelledby="y2023">
+    <h2 class="year" id="y2023">2023</h2>
+    <div class="entries">
+      <p class="lede">Tables for layout, a three second fake loader, and these first projects:</p>
+      <ul class="early">
+        <li><img src="2023/images/1.png" alt="Terminal menu of a to-do list app" loading="lazy"><b>To-do list</b> Python</li>
+        <li><img src="2023/images/3.jpg" alt="Terminal output of a calculator" loading="lazy"><b>Calculator</b> C</li>
+        <li><img src="2023/images/2.png" alt="Terminal session of an ATM app" loading="lazy"><b>ATM app</b> C</li>
+        <li><img src="2023/images/2.jpeg" alt="Entity relationship diagram" loading="lazy"><b>Database design</b> ER diagram</li>
+      </ul>
+      <a class="oldbtn" href="2023/index.html">Open the original site</a>
+    </div>
+  </section>
 
-<!--navbar-->
-<ul class="navbar">
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="myprojects.html">My Projects</a></li>
-  <li><a href="Inspiration.html">My Inspiration</a></li>
-  <li><a href="Blog.html">Blog</a></li>
-  <li><a href="Whoami.html">Who am I</a></li>
-  <li style="float:right"><a href="Contact.html">Contact me</a></li>
-</ul>
+  <div id="timeline">
+    <noscript><p class="era light">See my projects on <a href="https://github.com/Contraill">GitHub</a>.</p></noscript>
+  </div>
 
+  <section class="era light now" id="now" aria-labelledby="now-h">
+    <h2 class="year" id="now-h">Now</h2>
+    <div class="entries">
+      <p class="lede" id="now-summary">Public projects on GitHub, by main language.</p>
+      <div class="langbar" id="langbar"></div>
+      <ul class="langs" id="langs"></ul>
 
-<!--sayfanın gerisi-->
-<table>
-  <colgroup>
-    <col style="width: 20%">
-    <col style="width: 60%">
-    <col style="width: 20%">
-  </colgroup>
-<tr>
-<td>
+      <form class="contact" id="contact" aria-labelledby="contact-h">
+        <h3 id="contact-h">Write to me</h3>
+        <label>Your name <input name="name" required autocomplete="name"></label>
+        <label>Message <textarea name="message" rows="5" required></textarea></label>
+        <button type="submit">Open in my mail app</button>
+        <p class="alt">Or email <a href="mailto:i.canoztozlu@protonmail.com">i.canoztozlu@protonmail.com</a> directly.</p>
+      </form>
+    </div>
+  </section>
+</main>
 
-<!--sol-->
+<footer class="foot">
+  <a href="2023/index.html">Original 2023 site</a>
+  <a href="https://github.com/Contraill/Programming-Adventure">Source</a>
+  <a href="https://github.com/Contraill">GitHub</a>
+</footer>
 
-</td>
-<td>
-<!--içerik aralığı başı-->
-<br><h1>My Proggramming Adventure</h1>
-
-<table>
-<colgroup>
-<col style="width: 60%">
-<col style="width: 40%">
-</colgroup>
-<tr><td>
-Hello, I'm Can. In this blog, I share the projects and experiences I have while learning coding. Coding is both a fun and useful skill. Keep coding! 
-</td><td><br><br><p style="margin-left: 4px;"><img src="images\1.jpg" alt="Compiler" width="350"></p>
-</td></tr>
-</table>
-
-I will talk about the parts of this blog in a list below:
-
-<ol type='I'>
-<li>
-	<p style="color:white;">My Projects</p>
-</li>
-	<li>
-	<p style="color:white;">My Inspirations</p><ul type='square'>
-		<li>
-		<p style="color:white;">Like videos from youtube for education purposes</p>
-		</li>
-		</ul>
-	</li>
-	<li>
-	<p style="color:white;">Blog</p><ul type='square'>
-		<li>
-		<p style="color:white;">a blog that I mentioned my the difficulties I experienced</p>
-		</li>
-		</ul>
-	</li>
-	<li>
-	<p style="color:white;">Who am I</p>
-	</li>
-	<li>
-	Contact me<ul type='square'>
-		<li>
-		<p style="color:white;">For if you have questions</p>
-	</li>
-	</ul>
-</li>
-</ol>
-<!--içerik aralığı sonu-->
-</td>
-
-<!--sağ-->
-
-<td>
-
-</td></tr>
-</table>
-</div>
-
-<script>
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
 </body>
 </html>
